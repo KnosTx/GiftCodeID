@@ -3,7 +3,7 @@ main: NurAzliYT\GiftCode\GiftCode
 api: 5.0.0
 version: 1.0.0
 author: NurAzliYT
-depend: [EconomyAPI, FormAPI, CoinAPI]
+depend: [EconomyAPI, FormAPI, MultiWorld, HumanNPC]
 description: Plugin Gift Kode Bahasa Indonesia
 
 permissions:
