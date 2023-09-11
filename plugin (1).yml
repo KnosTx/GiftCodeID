@@ -1,0 +1,15 @@
+name: GiftCodeID
+main: NurAzliYT\GiftCode\GiftCode
+api: 5.0.0
+version: 1.0.0
+author: NurAzliYT
+depend: [EconomyAPI, FormAPI, CoinAPI]
+description: Plugin Gift Kode Bahasa Indonesia
+
+permissions:
+  giftcode.createcode:
+    description: Permission untuk membuat kode
+    default: op
+  giftcode.entercode:
+    description: Permission untuk enter kode
+    default: true
