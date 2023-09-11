@@ -3,8 +3,11 @@ main: NurAzliYT\GiftCode\GiftCode
 api: 5.0.0
 version: 1.0.0
 author: NurAzliYT
-depend: [EconomyAPI, FormAPI, MultiWorld, HumanNPC]
+depend: [BedrockEconomy, EconomyAPI]
 description: Plugin Gift Kode Bahasa Indonesia
+
+virions:
+- FormAPI
 
 permissions:
   giftcode.createcode:
