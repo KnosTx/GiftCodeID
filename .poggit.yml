@@ -16,9 +16,6 @@ projects:
       - src: ifera-mc/ConfigUpdater/ConfigUpdater
         version: ^2.0.0
         branch: master
-      - src: NurAzliYT/ConfigUpdater/ConfigUpdater
-        version: ^1.0.0
-        branch: main
       - src: NurAzliYT/FormAPI/FormAPI
         version: ^1.0.0
         branch: main
