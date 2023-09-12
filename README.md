@@ -14,4 +14,4 @@ If you want to create code, type the command
 </div>
 
 # Donation
-(https://saweria.co "SAWERIA")
+saweria.co
