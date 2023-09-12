@@ -16,9 +16,8 @@ projects:
       - src: ifera-mc/ConfigUpdater/ConfigUpdater
         version: ^2.0.0
         branch: master
-      - src: NurAzliYT/FormAPI/FormAPI
-        version: ^1.0.0
-        branch: main
+      - src: jojoe77777/FormAPI/libFormAPI
+        version: ^2.1.1
     lint:
       phpstan: false
 ...
