@@ -8,15 +8,6 @@ projects:
     path: ""
     icon: 1611205.png
         libs:
-      - src: Ifera/ScoreFactory/ScoreFactory
-        version: ^3.1.0
-        branch: master
-      - src: ifera-mc/UpdateNotifier/UpdateNotifier
-        version: ^3.0.0
-        branch: master
-      - src: ifera-mc/ConfigUpdater/ConfigUpdater
-        version: ^2.0.0
-        branch: master
       - src: jojoe77777/FormAPI/libFormAPI
         version: ^2.1.1
     lint:
