@@ -23,12 +23,12 @@ class NhapCodeCommands extends Command implements PluginOwned {
 
 	public function execute(CommandSender $sender, string $label, array $args){
 		if(!$sender instanceof Player){
-			$sender->sendMessage("§l§cMenggunakan Perintah Dalam Game");
+			$sender->sendMessage("§l§cMenggunakan Perintah Dalam Game. Tidak Bisa Di Konsol");
 			return true;
 		}
 		if(!$sender->hasPermission("giftcode.entercode")){
 			$sender->sendMessage("§c§l
-Anda Tidak Memiliki Hak Untuk Menggunakan Kode Ini!");
+Kamu Tidak Memiliki Hak Untuk Menggunakan Kode Ini!");
 			return true;
 		}
 		$form = new FormManager($this->getOwningPlugin());
