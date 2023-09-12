@@ -14,4 +14,4 @@ If you want to create code, type the command
 </div>
 
 # Donation
-<a href="https://saweria.co/NurAzliYT" type="blank_"><div>Saweria</div></a>
+[Saweria]: https://saweria.co/NurAzliYT
