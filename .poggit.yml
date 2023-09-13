@@ -9,4 +9,6 @@ projects:
     libs:
       - src: jojoe77777/FormAPI/libFormAPI
         version: ^2.1.1
+      - src: ifera-mc/UpdateNotifier/UpdateNotifier
+        version: ^3.0.0
 ...
