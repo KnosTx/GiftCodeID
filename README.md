@@ -5,5 +5,5 @@
 
 # Commands
 
-<p>/entercode enter code gift</p>
-<p>/createcode create a Gift Code</p>
+<p>/kirimkode enter code gift</p>
+<p>/buatkode create a Gift Code</p>
