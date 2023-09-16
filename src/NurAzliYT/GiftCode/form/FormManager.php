@@ -6,7 +6,7 @@ namespace NurAzliYT\GiftCode\form;
 
 use pocketmine\player\Player;
 use jojoe77777\FormAPI\CustomForm;
-use onebone\economyapi\EconomyAPI;
+use cooldogepm\BedrockEconomy\BedrockEconomy;
 use onebone\coinapi\CoinAPI;
 use NurAzliYT\GiftCode\GiftCode;
 
@@ -94,7 +94,7 @@ class FormManager {
 				$money = (int)$this->plugin->code->get($data[0])["money"];
 				$coin = (int)$this->plugin->code->get($data[0])["coin"];
 				$player->sendMessage("§bMasukkan kode dengan sukses dan Anda telah menerima $money Uang dan $coin Coin");
-				EconomyAPI::getInstance()->addMoney($player, $money);
+                                BedrockEconomy::getInstance()->addMoney($player, $money);
 				CoinAPI::getInstance()->addCoin($player, $coin);
 				$count = (int)$this->plugin->code->get($data[0])["count"];
 				$this->plugin->code->setNested($data[0] . ".count", $count - 1);
