@@ -1,10 +1,10 @@
-name: GiftCodeID
+name: GiftCode
 main: NurAzliYT\GiftCode\GiftCode
 api: 5.0.0
 version: 1.0.0
 author: NurAzliYT
 depend: [BedrockEconomy, MultiWorld, HumanNPC]
-description: Plugin Gift Kode Bahasa Indonesia
+description: Plugin Gift Code English
 
 virions:
 - FormAPI
