@@ -62,10 +62,10 @@ class FormManager {
 			$player->sendMessage("§bBerhasil membuat Giftcode $data[1] dengan input $data[2], hadiahnya adalah $data[3] Coin dan $data[4] Coin
 ");
 		});
-		$form->setTitle("Buat Kode Hadiah");
-		$form->addLabel("Silakan isi apa yang perlu Anda isi di bawah ini");
-		$form->addInput("Kode:", "Mis: QNLYYO7588");
-		$form->addInput("Jumlah orang yang bisa masuk:", "Contoh: 5");
+		$form->setTitle("Create a Gift Code");
+		$form->addLabel("Please fill in what you need to fill in below");
+		$form->addInput("Code:", "For example: QNLYYO7588");
+		$form->addInput("Number of people who can enter:", "Example: 5");
 		$form->addInput("Jumlah yang diberikan:", "Contoh: 1 (Tulis 0 jika tidak memberikan Uang)");
 		$form->addInput("Jumlah koin yang disumbangkan:", "Contoh: 2 (Tulis 0 jika Anda tidak menyumbangkan Koin)");
 		$form->sendToPlayer($player);
@@ -78,11 +78,11 @@ class FormManager {
 				return true;
 			}
 			if(!$this->plugin->code->exists($data[0])){
-				$player->sendMessage("§cKode Ini Tidak Ada!");
+				$player->sendMessage("§cThis Code Doesn't Exist!");
 				return true;
 			}
 			if((int)$this->plugin->code->get($data[0])["count"] < 1){
-				$player->sendMessage("§cKode Ini Telah Kedaluwarsa!");
+				$player->sendMessage("§cThis Code Has Expired!!");
 				return true;
 			}
 			$ex = explode(", ", $this->plugin->code->get($data[0])["enter-by-player-list"]);
@@ -93,7 +93,7 @@ class FormManager {
 				$this->plugin->code->save();
 				$money = (int)$this->plugin->code->get($data[0])["money"];
 				$coin = (int)$this->plugin->code->get($data[0])["coin"];
-				$player->sendMessage("§bMasukkan kode dengan sukses dan Anda telah menerima $money Uang dan $coin Coin");
+				$player->sendMessage("§bEnter the code successfully and you have received $money Money and $coin Coin");
                                 BedrockEconomy::getInstance()->addMoney($player, $money);
 				CoinAPI::getInstance()->addCoin($player, $coin);
 				$count = (int)$this->plugin->code->get($data[0])["count"];
@@ -103,8 +103,8 @@ class FormManager {
 				$player->sendMessage("§cAnda telah memasukkan kode ini sebelumnya!");
 			}
 		});
-		$form->setTitle("Masukkan Code");
-		$form->addInput("Masukkan kode yang ingin Anda masukkan di bawah ini:", "Contoh: BD148SF8GJQ");
+		$form->setTitle("Enter Code");
+		$form->addInput("Enter the code you want to enter below:", "Example: BD148SF8GJQ");
 		$form->sendToPlayer($player);
 	}
 }
