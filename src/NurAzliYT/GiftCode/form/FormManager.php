@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1); // BỐ LƯỜI CLEAN OK :))))
+declare(strict_types=1);
 
 namespace NurAzliYT\GiftCode\form;
 
@@ -8,7 +8,7 @@ use pocketmine\player\Player;
 use jojoe77777\FormAPI\CustomForm;
 use cooldogepm\BedrockEconomy\BedrockEconomy;
 use onebone\coinapi\CoinAPI;
-use NurAzliYT\GiftCode\GiftCode;
+use NurAzliYT\GiftCode\GiftCode-GB;
 
 class FormManager {
 
