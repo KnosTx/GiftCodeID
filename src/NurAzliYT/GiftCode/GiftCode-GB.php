@@ -11,7 +11,7 @@ use NurAzliYT\GiftCode\commands\TaoCodeCommands;
 use NurAzliYT\GiftCodd\commands\EnterCodeAliasCommands;
 use NurAzliYT\GiftCode\form\FormManager;
 
-class GiftCode extends PluginBase {
+class GiftCode-GB extends PluginBase {
 
 	public static $instance;
 
