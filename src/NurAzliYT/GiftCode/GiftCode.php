@@ -12,7 +12,7 @@ use NurAzliYT\GiftCode\commands\EnterCodeAliasCommands;
 use NurAzliYT\GiftCode\form\FormManager;
 
 class GiftCode extends PluginBase {
-
+        private $code;
 	public static $instance;
 
 	public static function getInstance() : self {
