@@ -8,7 +8,7 @@ use pocketmine\player\Player;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginOwned;
-use NurAzliYT\GiftCode\GiftCode-GB;
+use NurAzliYT\GiftCode\GiftCode;
 use NurAzliYT\GiftCode\form\FormManager;
 
 class NhapCodeCommands extends Command implements PluginOwned {
