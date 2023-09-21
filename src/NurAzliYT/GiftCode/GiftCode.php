@@ -8,7 +8,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use NurAzliYT\GiftCode\commands\NhapCodeCommands;
 use NurAzliYT\GiftCode\commands\TaoCodeCommands;
-use NurAzliYT\GiftCodd\commands\EnterCodeAliasCommands;
+use NurAzliYT\GiftCode\commands\EnterCodeAliasCommands;
 use NurAzliYT\GiftCode\form\FormManager;
 
 class GiftCode extends PluginBase {
