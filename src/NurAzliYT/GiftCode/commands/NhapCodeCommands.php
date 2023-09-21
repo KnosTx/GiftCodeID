@@ -8,7 +8,7 @@ use pocketmine\player\Player;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginOwned;
-use NurAzliYT\GiftCode\GiftCode;
+use NurAzliYT\GiftCode\GiftCode-GB;
 use NurAzliYT\GiftCode\form\FormManager;
 
 class NhapCodeCommands extends Command implements PluginOwned {
@@ -17,7 +17,7 @@ class NhapCodeCommands extends Command implements PluginOwned {
 
 	public function __construct(GiftCode $plugin){
 		$this->plugin = $plugin;
-		parent::__construct("klaimkode", "klaim GiftCode", null, ["entercode"]);
+		parent::__construct("entercode", "Enter Code", null, ["entercode"]);
 		$this->setPermission("giftcode.entercode");
 	}
 
