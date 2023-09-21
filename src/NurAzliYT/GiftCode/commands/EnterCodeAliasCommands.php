@@ -17,18 +17,18 @@ class NhapCodeCommands extends Command implements PluginOwned {
 
 	public function __construct(GiftCode $plugin){
 		$this->plugin = $plugin;
-		parent::__construct("klaimkode", "klaim GiftCode", null, ["entercode"]);
+		parent::__construct("ec", "Enter Code | GiftCode", null, ["ec"]);
 		$this->setPermission("giftcode.entercode");
 	}
 
 	public function execute(CommandSender $sender, string $label, array $args){
 		if(!$sender instanceof Player){
-			$sender->sendMessage("§l§cMenggunakan Perintah Dalam Game. Tidak Bisa Di Konsol");
+			$sender->sendMessage("§l§cUsing In-Game Commands. Cannot be used on console");
 			return true;
 		}
 		if(!$sender->hasPermission("giftcode.entercode")){
-			$sender->sendMessage("§c§l
-Kamu Tidak Memiliki Hak Untuk Menggunakan Kode Ini!");
+			$sender->sendMessage("§c§lYou Have No Rights To Use This Code!
+You Have No Rights To Use This Code!");
 			return true;
 		}
 		$form = new FormManager($this->getOwningPlugin());
