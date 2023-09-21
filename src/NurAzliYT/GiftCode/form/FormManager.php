@@ -8,7 +8,7 @@ use pocketmine\player\Player;
 use jojoe77777\FormAPI\CustomForm;
 use cooldogepm\BedrockEconomy\BedrockEconomy;
 use onebone\coinapi\CoinAPI;
-use NurAzliYT\GiftCode\GiftCode-GB;
+use NurAzliYT\GiftCode\GiftCode;
 
 class FormManager {
 
