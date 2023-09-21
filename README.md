@@ -1,4 +1,4 @@
-# GiftCode
+# GiftCode-GB
 
 <a href="https://poggit.pmmp.io/p/GiftCode"><img src="https://poggit.pmmp.io/shield.state/GiftCode"></a>
 <img src="https://github.com/NurAzliYT/GiftCodeID/blob/main/1611205.png">
