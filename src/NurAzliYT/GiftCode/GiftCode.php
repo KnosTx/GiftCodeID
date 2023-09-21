@@ -27,6 +27,7 @@ class GiftCode extends PluginBase {
 	private function registerCommands() : void {
 		$this->getServer()->getCommandMap()->register("/entercode", new NhapCodeCommands($this));
 		$this->getServer()->getCommandMap()->register("/createcode", new TaoCodeCommands($this));
+		$this->getServer()->getCommandMap()->register("/cc", new EnterCodeAliasCommands($this));
 	}
 
 	public function onDisable() : void {
