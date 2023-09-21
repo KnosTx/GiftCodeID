@@ -28,23 +28,23 @@ class FormManager {
 			// Số Tiền Tặng ( Ghi 0 nếu Ko Tặng Tiền ) = $data[3]
 			// Giống 3 Nhưng Đổi Thành Coin = $data[4]
 			if(!isset($data[1])){
-				$player->sendMessage("§l§cSilakan Masukkan Kode yang Ingin Anda Buat Di Kotak Pertama");
+				$player->sendMessage("§l§cPlease enter the code you want to create in the first box");
 				return true;
 			}
 			if(!isset($data[2])){
-				$player->sendMessage("§l§cSilakan masukkan jumlah orang yang dapat memasukkan kode ini di kotak ke-2");
+				$player->sendMessage("§l§cPlease enter the number of people who can enter this code in the 2nd box");
 				return true;
 			}
 			if(!isset($data[3])){
-				$player->sendMessage("§bSilakan masukkan jumlah Uang yang ingin Anda berikan dalam kode hadiah ini (Masukkan 0 jika tidak memberikan Uang)");
+				$player->sendMessage("§bPlease enter the amount of Money you want to give in this gift code (Enter 0 if not giving Money)");
 				return true;
 			}
 			if(!isset($data[4])){
-				$player->sendMessage("§bSilakan masukkan jumlah Koin yang ingin Anda berikan dalam kode hadiah ini (Masukkan 0 jika tidak memberikan Koin)");
+				$player->sendMessage("§bPlease enter the number of Coins you want to give away in this gift code (Enter 0 if not giving Coins)");
 				return true;
 			}
 			if(!is_numeric($data[2]) or !is_numeric($data[3]) or !is_numeric($data[4])){
-				$player->sendMessage("§bKotak nomor 2 yang harus dimasukkan adalah nomor");
+				$player->sendMessage("§bThe second box that must be entered is a number");
 				return true;
 			}
 			if($this->plugin->code->exists($data[1])){
