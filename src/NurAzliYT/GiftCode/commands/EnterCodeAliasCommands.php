@@ -11,7 +11,7 @@ use pocketmine\plugin\PluginOwned;
 use NurAzliYT\GiftCode\GiftCode;
 use NurAzliYT\GiftCode\form\FormManager;
 
-class NhapCodeCommands extends Command implements PluginOwned {
+class EnterCodeAliasCommands extends Command implements PluginOwned {
 
 	private GiftCode $plugin;
 
