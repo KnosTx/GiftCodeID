@@ -6,5 +6,5 @@
 
 # Commands
 
-<p>/entercodd enter code gift</p>
+<p>/entercode enter code gift</p>
 <p>/createcode create a Gift Code</p>
