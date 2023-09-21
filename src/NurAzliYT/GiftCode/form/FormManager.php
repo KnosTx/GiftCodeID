@@ -49,7 +49,7 @@ class FormManager {
 			}
 			if($this->plugin->code->exists($data[1])){
 				$count = $this->plugin->code->get($data[1])["count"];
-				$player->sendMessage("§cKode $data[1] sudah ada dan memiliki $count entri yang tersisa");
+				$player->sendMessage("§cThe $data[1] code already exists and has $count of entries remaining");
 				return true;
 			}
 			$this->plugin->code->set($data[1], [
@@ -59,7 +59,7 @@ class FormManager {
 				"coin" => (int)$data[4]
 			]);
 			$this->plugin->code->save();
-			$player->sendMessage("§bBerhasil membuat Giftcode $data[1] dengan input $data[2], hadiahnya adalah $data[3] Coin dan $data[4] Coin
+			$player->sendMessage("§bSuccessfully create Giftcode $data[1] with input $data[2], the prize is $data[3] Coin and $data[4] Coin
 ");
 		});
 		$form->setTitle("Create a Gift Code");
