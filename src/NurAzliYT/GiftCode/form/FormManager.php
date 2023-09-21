@@ -11,7 +11,6 @@ use onebone\coinapi\CoinAPI;
 use NurAzliYT\GiftCode\GiftCode;
 
 class FormManager {
-        private $code;
 	private GiftCode $plugin;
 
 	public function __construct(GiftCode $plugin){
