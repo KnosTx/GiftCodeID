@@ -13,7 +13,7 @@ use NurAzliYT\GiftCode\GiftCode;
 
 class FormManager {
 	private GiftCode $plugin;
-	public static $coinapi
+	public static $coinapi;
 
 	public function __construct(GiftCode $plugin){
 		$this->plugin = $plugin;
