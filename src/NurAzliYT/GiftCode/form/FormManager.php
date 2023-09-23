@@ -7,11 +7,13 @@ namespace NurAzliYT\GiftCode\form;
 use pocketmine\player\Player;
 use jojoe77777\FormAPI\CustomForm;
 use cooldogepm\BedrockEconomy\BedrockEconomy;
+use cooldogedev\BedrockEconomy\api\legacy\ClosureContext;
 use onebone\coinapi\CoinAPI;
 use NurAzliYT\GiftCode\GiftCode;
 
 class FormManager {
 	private GiftCode $plugin;
+	public static $coinapi
 
 	public function __construct(GiftCode $plugin){
 		$this->plugin = $plugin;
@@ -92,9 +94,18 @@ class FormManager {
 				$this->plugin->code->save();
 				$money = (int)$this->plugin->code->get($data[0])["money"];
 				$coin = (int)$this->plugin->code->get($data[0])["coin"];
+				$coinapi = CoinAPI::getInstance();
 				$player->sendMessage("§bEnter the code successfully and you have received $money Money and $coin Coin");
-                                BedrockEconomy::getInstance()->addMoney($player, $money);
-				CoinAPI::getInstance()->addCoin($player, $coin);
+                                BedrockEconomyAPI::legacy()->addToPlayerBalance(
+                                $player,
+                                $money,
+                                ClosureContext::create(
+                                    function (bool $wasUpdated): void {
+                                     var_dump($wasUpdated);
+                             },
+                           )
+                         );
+				$coinapi->addCoin($player, $coin);
 				$count = (int)$this->plugin->code->get($data[0])["count"];
 				$this->plugin->code->setNested($data[0] . ".count", $count - 1);
 				$this->plugin->code->save();
