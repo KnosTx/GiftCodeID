@@ -61,13 +61,7 @@ class FormManager {
 			$player->sendMessage("§bSuccessfully create Giftcode $data[1] with input $data[2], the prize is $data[3] Coin and $data[4] Coin
 ");
 		});
-		$form->setTitle("Create a Gift Code");
-		$form->addLabel("Please fill in what you need to fill in below");
-		$form->addInput("Code:", "For example: QNLYYO7588");
-		$form->addInput("Number of people who can enter:", "Example: 5");
-		$form->addInput("Jumlah yang diberikan:", "Contoh: 1 (Tulis 0 jika tidak memberikan Uang)");
-		$form->addInput("Jumlah koin yang disumbangkan:", "Contoh: 2 (Tulis 0 jika Anda tidak menyumbangkan Koin)");
-		$form->sendToPlayer($player);
+		#This
 	}
 
 	public function menuEnterCode(Player $player){
@@ -99,7 +93,7 @@ class FormManager {
 				$this->plugin->code->setNested($data[0] . ".count", $count - 1);
 				$this->plugin->code->save();
 			}else{
-				$player->sendMessage("§cAnda telah memasukkan kode ini sebelumnya!");
+				$player->sendMessage("§cYou have entered this code before!");
 			}
 		});
 		$form->setTitle("Enter Code");
