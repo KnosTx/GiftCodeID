@@ -11,6 +11,6 @@ projects:
         version: ^2.1.1
       - src: ifera-mc/UpdateNotifier/UpdateNotifier
         version: ^3.0.0
-      - src: NurAzliYT/CoinAPI/libCoinAPI
+      - src: NurAzliYT/CoinAPI
         version: ^1.0.0
 ...
