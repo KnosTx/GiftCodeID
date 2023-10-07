@@ -2,13 +2,13 @@
 
 declare(strict_types=1); // BỐ LƯỜI CLEAN OK :))))
 
-namespace NoobMCBG\GiftCode\form;
+namespace NurAzliYT\GiftCode\form;
 
 use pocketmine\player\Player;
 use jojoe77777\FormAPI\CustomForm;
 use onebone\economyapi\EconomyAPI;
 use onebone\coinapi\CoinAPI;
-use NoobMCBG\GiftCode\GiftCode;
+use NurAzliYT\GiftCode\GiftCode;
 
 class FormManager {
 
