@@ -7,7 +7,7 @@ namespace NurAzliYT\GiftCode\form;
 use pocketmine\player\Player;
 use jojoe77777\FormAPI\CustomForm;
 use onebone\economyapi\EconomyAPI;
-use onebone\coinapi\CoinAPI;
+use NurAzliYT\CoinAPI\CoinAPI;
 use NurAzliYT\GiftCode\GiftCode;
 
 class FormManager {
