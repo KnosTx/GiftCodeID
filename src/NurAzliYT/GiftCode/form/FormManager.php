@@ -6,7 +6,7 @@ namespace NurAzliYT\GiftCode\form;
 
 use pocketmine\player\Player;
 use jojoe77777\FormAPI\CustomForm;
-use cooldogopmdev\BedrockEconomy\BedrockEconomy;
+use cooldogedev\BedrockEconomy\BedrockEconomy;
 use NurAzliYT\CoinAPI\CoinAPI;
 use NurAzliYT\GiftCode\GiftCode;
 
