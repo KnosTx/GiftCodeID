@@ -13,9 +13,6 @@ class GiftCode extends PluginBase {
 
     private BedrockEconomy $economy;
 
-    public function onEnable() {
-        $this->getLogger()->info("GiftCode has been enabled!");
-
         // Inisialisasi BedrockEconomy
         $this->economy = $this->getServer()->getPluginManager()->getPlugin(BedrockEconomy::class);
 
