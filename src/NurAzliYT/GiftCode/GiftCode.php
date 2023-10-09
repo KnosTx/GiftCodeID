@@ -14,6 +14,7 @@ class GiftCode extends PluginBase {
     private BedrockEconomy $economy;
 
         // Inisialisasi BedrockEconomy
+    public function onEnable():void {
         $this->economy = $this->getServer()->getPluginManager()->getPlugin(BedrockEconomy::class);
 
         if ($this->economy === null) {
@@ -118,4 +119,5 @@ class GiftCode extends PluginBase {
             $sender->sendMessage("§cPenerima tidak ditemukan atau sedang offline.");
         }
     }
+}
 }
