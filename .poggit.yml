@@ -13,6 +13,4 @@ projects:
         version: ^3.0.0
       - src: NurAzliYT/CoinAPI/CoinAPI
         version: ^1.0.0
-      - src: onebone/EconomyAPI/EconomyAPI
-        version: ^1.0.0
 ...
