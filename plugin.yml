@@ -4,8 +4,7 @@ api: 5.0.0
 version: 1.0.0
 author: NurAzliYT
 depend: [BedrockEconomy, MultiWorld, HumanNPC]
-description: Plugin Gift Code English
-depend: ["BedrockEconomy"]
+description: Plugin Gift Code Englis
 
 virions:
 - FormAPI
